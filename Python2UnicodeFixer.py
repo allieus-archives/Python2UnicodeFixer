@@ -9,7 +9,7 @@ class Python2UnicodeFixer(sublime_plugin.EventListener):
     def on_pre_save(self, view):
         default_encoding = 'utf-8'
         settings = sublime.load_settings('Preferences.sublime-settings')
-        plugin_state = False
+        plugin_state = True
 
         if settings.has('unicodefixer'):
             plugin_state = settings.get('unicodefixer')
