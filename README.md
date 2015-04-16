@@ -16,5 +16,6 @@ Package Control: Install Package 에서 **Python2UnicodeFixer** 를 검색해서
 이제, .py 확장자의 파일을 저장할 때마다 이 플러그인이 동작합니다.
 
 ## TODO
- * 자동실행여부 옵션
+ * ~~자동실행여부 옵션~~ : @cryptosan 님. [감사합니다](https://github.com/allieus/Python2UnicodeFixer/commit/1e42c37bc08c538c24ebff01a8c4fc3231233370).
  * 단축키
+
