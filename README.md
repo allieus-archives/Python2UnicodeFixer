@@ -6,7 +6,10 @@
  * .py 소스코드에 utf8 인코딩 선언이 없으면, 파일 저장 시에 자동추가
  * .py 소스코드에 unicode_literals 선언이 없으면, 파일 저장 시에 자동추가
 
-설치해보실려면
+## Package Control 을 통한 설치
+Package Control: Install Package 에서 **Python2UnicodeFixer** 를 검색해서 설치
+
+## 수동 설치
  1. 에디터의 Preferences -> Brower Packages ... 를 선택하시면, Packages 디렉토리가 뜹니다.
  2. Packages 에 Python2UnicodeFixer 디렉토리를 만들고 안에 Python2UnicodeFixer.py 파일을 넣어줍니다.
 
