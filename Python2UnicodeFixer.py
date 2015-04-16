@@ -9,9 +9,9 @@ class Python2UnicodeFixer(sublime_plugin.EventListener):
         if re.search(r'\.(py)$', view.file_name()):
             content = self.get_buffer_contents(view)
 
-            if '# coding' not in content:
+            if not re.search('#\s*coding', content):
                 view.run_command("goto_line", {"line": 1})
-                view.run_command('insert_snippet', {"contents": "# coding: utf8\n"})
+                view.run_command('insert_snippet', {"contents": "# -*- coding: utf-8 -*-\n"})
 
             if 'unicode_literals' not in content:
                 view.run_command("goto_line", {"line": 2})
